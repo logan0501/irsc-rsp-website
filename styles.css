@@ -7,7 +7,7 @@
 :root{
     --dark-blue:#143B68;
     --light-blue:#139BA3;
-
+    --green:#79C03B;
 }
 body{
     background-image: url('assets/bg_splash.png');
@@ -22,7 +22,7 @@ nav a{
    
     font-weight: bold;
     text-decoration: none;
-    font-size: 2em;
+    font-size: 2rem;
     color: var(--dark-blue);
 }
 .intro{
@@ -66,8 +66,8 @@ nav a{
     line-height: 65px;
 }
 .dash{
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 40px;
+    margin-bottom: 40px;
     height: 5px;
     background: #29BBC4;
     width: 70px;
@@ -91,13 +91,12 @@ nav a{
     height: 400px;
     background-position: center;
     background-repeat: no-repeat;
-}
-.our-difference{
     color: white;
     padding: 10% 0 0 10%;
     font-size: 2rem;
     font-weight:500;
 }
+
 .our-difference .content{
    
     font-weight: 400;
@@ -109,4 +108,128 @@ nav a{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+.help-section{
+    background-color: white;
+}
+.help-section header{
+    font-size: 2rem;
+}
+.help-header{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.help-section main{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding-bottom: 20px;
+}
+.help-card{
+    max-width: 200px;
+    height: 220px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    background: #FFFFFF;
+    box-shadow: 0 0 32px 0 rgb(100 122 148 / 18%);
+    
+}
+.locations{
+    background-color: var(--green);
+  
+    padding-bottom: 20px;
+}
+.locations header{
+    text-align: center;
+    padding-top: 30px;
+    font-size: 2rem;
+    color: white;
+}
+.locations main{
+    text-align: center;
+    padding: 20px;
+}
+.locations main p{
+    color: var(--dark-blue);
+    margin: 5px;
+
+}
+.clubs{
+    background-color: white;
+    padding-bottom: 20px;
+}
+.clubs header{
+    color: var(--dark-blue);
+    text-align: center;
+}
+.clubs>div{
+    padding-top: 20px;
+   
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    align-items:  center;
+    
+}
+
+.clubs p{
+    font-size: 1.5rem;
+    color:var(--green);
+    text-align: center;
+}
+
+@media  screen and (max-width:700px) {
+    body{
+        overflow-x: hidden;
+    }
+    nav {
+        font-size: 1rem;
+        padding-bottom: 5%;
+     }
+     .intro{
+         font-size: 1rem;
+         flex-direction: column;
+         align-items: center;
+     }
+     .intro img{
+         height: 200px;
+         margin: 0;
+         margin-top: 10px;
+     }
+     .intro-section{
+         padding-left: 10px;
+         padding-top: 0px;
+     }
+     .our-difference{
+         position: relative;;
+         padding: 5px;
+         text-align: center;
+     }
+     .our-difference header{
+         margin: 5px;
+     }
+     .our-difference .dash{
+        display: none;
+     }
+     .our-difference main{
+         
+         position: absolute;
+         bottom: -1px;
+     }
+     .help-section header{
+         text-align: center;
+         padding: 5px;
+     }
+     .help-section main{
+         flex-direction: row;
+         flex-wrap: wrap;
+     }
+     .help-card{
+         display: inline;
+     }
+    
 }
